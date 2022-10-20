@@ -1,3 +1,41 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="contenido">
+        <img src="../assets/logo2.png" alt="inicio">
+        <ion-label>
+          <h2>¡Hola!</h2>
+          <p>Aplicación Prueba2</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon name="qr-code-outline"></ion-icon>Encanear Descuento KamiVan
+        </ion-button>
+      </div>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-item class="active">
+          <ion-icon name="car-sport-outline"></ion-icon>
+          <ion-button size="small">Conductores Disponibles</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="location-outline"></ion-icon>
+          <ion-button size="small">Enviar Ubicación</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <ion-badge slot="end">13</ion-badge>
+          <ion-button size="small">Mensajes no leidos</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="exit-outline"></ion-icon>
+          <ion-button size="small">Cerrar Sesión</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+

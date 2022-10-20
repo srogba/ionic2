@@ -1,0 +1,40 @@
+{
+    "data" : [
+        {
+            "name": "Kmilo",
+            "state": "En Línea",
+            "description": "Socio Conductor",
+            "email": "k.robledo@duocuc.cl",
+            "address": "Debajo del puente #666",
+            "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+            "star": "★★★★★",
+            "service": "Reconocimientos: Amable",
+            "qualification": "Calificación: 4.85",
+            "trips": "Viajes: 155"
+        },
+        {
+            "name": "Lucho",
+            "state": "No Disponible",
+            "description": "Socio Conductor",
+            "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+            "email": "l.espinoza@duocuc.cl",
+            "address": "Calle sin salida #2412",
+            "star": "★★★★",
+            "service": " Reconocimientos: Buena Ruta",
+            "qualification": "Calificación: 3.21",
+            "trips": "Viajes: 128"
+        },
+        {
+            "name": "Iván",
+            "state": "En Línea",
+            "description": "Socio Conductor",
+            "email": "iva.diazc@duocuc.cl",
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "address": "Av. Pobre guacho #469",
+            "star": "★★★★★",
+            "service": "Reconocimientos: Excelente Servicio y Buena Conversa",
+            "qualification": "Calificación: 4.99",
+            "trips": "Viajes: 169"
+        }
+    ]
+}

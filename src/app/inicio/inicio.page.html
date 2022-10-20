@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <br>
+  <br>
+  <br>
+
+  <ion-card>
+    <ion-card-content style="text-align: center;">
+      <h1 class=>¿ Que usuario eres?</h1>
+      <br>
+      <p style="text-align: center;">Ingresa a tu perfil correspondiente para poder avanzar</p>
+      <br>
+      <p style="text-align: center;">
+        <ion-button color="primary" slot="start" [routerLink]="['/']"> conductor</ion-button>
+
+        <ion-button color="primary" slot="start" [routerLink]="['/usuario']"> usuario</ion-button>
+      </p>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="short">}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+  </div>
+</ion-content>

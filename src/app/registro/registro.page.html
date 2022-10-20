@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-toolbar color="dark">
+    <ion-title>Restablecer Contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    
+   
+      </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-seccion ion-padding">
+    <div class="heading ion-padding">
+    </div>
+  </div>
+<ion-card class="heading ion-padding">
+  <form [formGroup]="formularioRegistro">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-button color="primary" (click)="guardar()" > Restablecer Contraseña</ion-button>
+    <ion-button color="danger" slot="end" [routerLink]="['/login']"> Quiero Iniciar Sesión  </ion-button>
+
+  </form>
+</ion-card>
+</ion-content>

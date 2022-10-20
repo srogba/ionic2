@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title slot="end">Bienvenido @</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicio"></ion-back-button>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <p>Mi Menú</p>
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+      </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let user of users">
+    <ion-avatar slot="start">
+      <img src="{{user.image}}" alt="">
+    </ion-avatar>
+    <ion-avatar slot="end">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-avatar>
+    <ion-label>
+      <h2 class="colorBlue">{{user.name}}</h2>
+      <p>{{user.description}}</p>
+      <p><b>{{user.state}}</b></p>
+      <p>{{user.email}}</p>
+      <p>{{user.address}}</p>
+      <p>{{user.star}} - {{user.qualification}}</p>
+      <p>{{user.service}}</p>
+      <p>{{user.trips}}</p>
+    </ion-label>
+  </ion-item>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="short"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+  </div>
+</ion-content>
+
